@@ -20,7 +20,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 5rem 2rem 5rem;
+  padding: 1.5rem 10rem 2rem 9rem;
   margin-bottom: 0;
   border-bottom: 1px solid rgb(59, 56, 56);
 }
@@ -89,13 +89,19 @@ footer {
 
 .nav-bar {
   position:sticky;
-  top: 0; /* Navbar akan menempel di bagian atas */
+  top: 0; 
   z-index: 1000;
 }
 
 .tittle {
   display: flex;
   justify-content: center;
+}
+
+.tittle img {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  height: 3.2rem;
 }
 
 .list {
@@ -165,7 +171,7 @@ footer {
 }
 
 .tech {
-  padding: 4rem 0;
+  padding: 10rem 0;
 }
 
 .tech h2 {
@@ -197,7 +203,7 @@ footer {
 }
 
 .project-section {
-  padding: 4rem 2rem;
+  padding: 10rem 2rem;
   text-align: center;
   display: flex;
   flex-flow: column;

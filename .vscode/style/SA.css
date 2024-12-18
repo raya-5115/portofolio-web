@@ -157,10 +157,17 @@ footer {
   padding-top: 20px;
 }
 
-.social-media a:hover {
-  color: #7927d0;
+.social-media .sm-wa a:hover {
+  color: #25D366;
 }
 
+.social-media .sm-ig a:hover {
+  color: #E4405F;
+}
+
+.social-media .sm-line a:hover {
+  color: #00C300;
+}
 .sm-list {
   display: flex;
   gap: 25px;
@@ -193,13 +200,7 @@ footer {
 
 .icon img {
   width: 100px;
-  height: 100px;
-  transition: transform 0.3s ease; 
-}
-
-.icon img:hover {
-  transform: scale(1.1); 
-  cursor: pointer;
+  height: 100px; 
 }
 
 .project-section {

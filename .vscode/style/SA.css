@@ -175,7 +175,7 @@ footer {
 }
 
 .tech h2 {
-  font-size: 2.6rem;
+  font-size: 3rem;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -192,8 +192,8 @@ footer {
 }
 
 .icon img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   transition: transform 0.3s ease; 
 }
 
@@ -211,9 +211,8 @@ footer {
 }
 
 .project-section h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
-  color: #2c3e50;
 }
 
 .project-container {

@@ -79,10 +79,17 @@ footer {
   align-items: center;
   justify-content: center;
   height: auto;
-
-
+  display: flex;
+  flex-direction: column;
 }
 
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  color: #3498db;
+}
 .profile {
   padding: 4rem 0;
 }
@@ -114,8 +121,6 @@ footer {
   flex-direction: row;
   flex: 1;
   gap: 7rem;
-  
-
 }
 
 .card {
@@ -126,7 +131,20 @@ footer {
   font-size: x-large;
 }
 
+.card .description h1 {
+  font-size: 2rem;
+  width: 46%;
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2.5s steps(19),
+  cursor .4s step-end infinite alternate;
+}
 
+.card .description p {
+  animation: slideInDown;
+  animation-duration: 1000ms;
+}
 .social-media {
   height: 10%;
   display: flex;
@@ -136,6 +154,8 @@ footer {
 .photo {
   width: 100px;
   transition: all 300ms;
+  animation: slideInRight;
+  animation-duration: 1000ms;
 }
 
 .photo:hover {
@@ -155,6 +175,8 @@ footer {
   flex-flow: row nowrap;
   padding-left: 55px;
   padding-top: 20px;
+  animation: backInLeft;
+  animation-duration: 1000ms;
 }
 
 .social-media .sm-wa a:hover {
@@ -167,6 +189,10 @@ footer {
 
 .social-media .sm-line a:hover {
   color: #00C300;
+}
+
+.social-media .sm-gh a:hover {
+  color:cadetblue
 }
 .sm-list {
   display: flex;
@@ -184,7 +210,7 @@ footer {
 .tech h2 {
   font-size: 3rem;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 3rem;
 }
 .icon {
   display: flex;
@@ -208,7 +234,7 @@ footer {
 
 .project-section h2 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .project-container {
@@ -297,3 +323,23 @@ footer {
     padding: 2rem;
   }
 }
+
+@keyframes cursor {
+  40% { border-color: transparent;}
+}
+
+@keyframes typing {
+  from { 
+    width: 0%;
+  }
+}
+
+@keyframes slideInRight{
+
+}
+
+@keyframes slideInDown {
+
+}
+
+@keyframes backInLeft{}
